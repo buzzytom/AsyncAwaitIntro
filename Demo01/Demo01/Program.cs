@@ -8,7 +8,7 @@ namespace Demo
         static void Main(string[] args)
         {
             // Change the class initialised here to change the demo
-            IDemo demo = new Demo3();
+            IDemo demo = new Demo4();
             demo.Run().GetAwaiter().GetResult();
             Console.ReadKey();
         }

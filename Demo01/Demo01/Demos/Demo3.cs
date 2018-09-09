@@ -23,7 +23,7 @@ namespace Demo.Demos
 
         private async void OnButtonClicked(object sender, EventArgs e)
         {
-            int result = await GetTheNumber42FromTheWeb().ConfigureAwait(false);
+            int result = await GetTheNumber42FromTheWeb();
             Console.WriteLine($"Updating UI Element to {result}.");
             completed.SetResult(true);
         }
